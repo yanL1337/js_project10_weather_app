@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Inter;
+}
+
+.display {
+  display: block;
+}
+.displayNo {
+  display: none;
+}
+
+.line {
+  width: 2px;
+  background-color: black;
+  height: 100%;
+}
+body {
+  height: fit-content;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: auto;
+    text-align: center;
+    position: relative;
+    border-radius: 10.488px;
+    background: var(
+      --linear-blue-BG,
+      linear-gradient(192deg, #47bfdf 0%, #4a91ff 100%)
+    );
+    box-shadow: -3.77069px 7.54137px 30.16549px 2.26241px rgba(19, 35, 78, 0.2);
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .searchWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: fit-content;
+      margin: 0 auto;
+      padding-top: 10vh;
+      position: relative;
+      margin-bottom: 5vh;
+
+      input {
+        border: none;
+        border-radius: 15px;
+        height: 5vh;
+        width: 20vw;
+      }
+      img {
+        height: 40px;
+        margin-right: 1vw;
+      }
+    }
+
+    .weatherState {
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 5vh;
+      img {
+        width: 10vw;
+        border-radius: 20px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      }
+    }
+
+    .weatherWrapper {
+      border-radius: 13.984px;
+      border: 1.398px solid #fff;
+      width: fit-content;
+      margin: 0 auto;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      .weatherContent {
+        border-radius: 13.984px;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(1.7479827404022217px);
+        padding: 2vh 5vw;
+        .date {
+          color: rgb(87, 100, 113);
+          font-size: 3rem;
+          margin-bottom: 2vh;
+        }
+        .mainInfo {
+          display: flex;
+          flex-wrap: wrap;
+
+          justify-content: center;
+
+          div {
+            border-bottom: 2px solid black;
+            h2 {
+              color: white;
+              font-size: 3rem;
+              margin-bottom: 2vh;
+              padding-right: 5vw;
+            }
+            h1 {
+              color: white;
+              font-size: 6rem;
+              margin-bottom: 3vh;
+              padding-right: 5vw;
+            }
+          }
+        }
+        .otherItems {
+          display: flex;
+          width: fit-content;
+          margin: 0 auto;
+          justify-content: space-around;
+          border-bottom: 2px solid black;
+
+          .itemCol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            padding: 0 1rem;
+            p {
+              color: rgb(87, 100, 113);
+            }
+            img {
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

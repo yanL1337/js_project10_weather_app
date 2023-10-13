@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather by Yan</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="100%"
+        viewBox="0 0 198 219"
+        fill="none"
+      >
+        <path
+          d="M14.627 -37.7561L11.423 -32.4961C-17.3643 14.7643 13.1151 75.8698 68.1853 81.3023V81.3023C104.052 84.8404 132.367 113.57 135.621 149.463V149.463C139.154 188.427 171.841 218.498 210.965 218.498H246.409"
+          stroke="white"
+          stroke-opacity="0.3"
+          stroke-width="0.699193"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="6.99 6.99"
+        />
+      </svg>
+      <div class="searchWrapper">
+        <img src="./assets/img/Frame.png" alt="" />
+        <input
+          type="text"
+          class="locationInput"
+          placeholder="Ort eingeben..."
+        />
+      </div>
+      <div class="weatherState"></div>
+      <div class="weatherWrapper displayNo">
+        <div class="weatherContent">
+          <div class="date"></div>
+          <div class="mainInfo"></div>
+          <div class="otherItems">
+            <div class="itemCol">
+              <img src="./assets/img/Frame.png" alt="" />
+              <img src="./assets/img/windy.png" alt="" />
+              <img src="./assets/img/hum.png" alt="" />
+            </div>
+
+            <div class="itemCol">
+              <p>Ort</p>
+              <p>Wind</p>
+              <p>Hum</p>
+            </div>
+
+            <div class="ItemCol">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
